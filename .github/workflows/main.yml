@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }} 
       # instalando as dependencias   
-      - run: npm install  
+      - run: npm ci
       
       # executar os testes usando o cucumber
       - run: npm run cy:run:cucumber
